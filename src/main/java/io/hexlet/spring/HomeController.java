@@ -30,7 +30,9 @@ public class HomeController {
 
     @PostMapping("/posts")
     public Post create(@RequestBody Post post) {
-        posts.add(post);
+        if (post.getTitle().length() < 3 || post.getContent().length() < 10) {
+            throw new RuntimeException("Эй, заголовок/контент допиши");
+        }
         return post;
     }
 

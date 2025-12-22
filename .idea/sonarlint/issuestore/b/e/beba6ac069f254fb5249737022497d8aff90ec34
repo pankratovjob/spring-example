@@ -1,5 +1,6 @@
 
+b	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(Ï§ÉÛ8ıãÖ¤´3
 {
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(§´‚Ëüÿÿÿÿ8­¿ù‹°3
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(§´‚Ëüÿÿÿÿ8şãÖ¤´3
 ~
-java:S1488'"\Immediately return this expression instead of assigning it to the temporary variable "post".(¢—¹şÿÿÿÿ8ÇâÇ‚²3
+java:S1488)"\Immediately return this expression instead of assigning it to the temporary variable "post".(¢—¹şÿÿÿÿ8ÿãÖ¤´3

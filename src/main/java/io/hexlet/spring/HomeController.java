@@ -3,6 +3,8 @@ package io.hexlet.spring;
 import io.hexlet.spring.Model.Post;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -19,38 +21,47 @@ public class HomeController {
     private List<Post> posts = new ArrayList<Post>();
 
     @GetMapping("/")
-    String home() {
-        return "!Добро пожаловать в Hexlet Spring Blog!";
+    public ResponseEntity<String> home() {
+        var welcomeHxt = "!Добро пожаловать в Hexlet Spring Blog!";
+        return ResponseEntity.ok().body(welcomeHxt);
     }
 
     @GetMapping("/about")
-    public String about() {
-        return "This is simple Spring blog!";
+    public ResponseEntity<String> about() {
+        var welcomTxt = "This is simple Spring blog!";
+        return ResponseEntity.ok()
+                .body(welcomTxt);
     }
 
     @PostMapping("/posts")
-    public Post create(@RequestBody Post post) {
+    public ResponseEntity<Post> create(@RequestBody Post post) {
         if (post.getTitle().length() < 3 || post.getContent().length() < 10) {
             throw new RuntimeException("Эй, заголовок/контент допиши");
         }
-        return post;
+        posts.add(post);
+        return ResponseEntity.status(HttpStatus.CREATED).body(post);
     }
 
     @GetMapping("/posts/{id}")
-    public Optional<Post> show(@PathVariable String id) {
+    public ResponseEntity<Optional<Post>> show(@PathVariable String id) {
         var post = posts.stream()
                 .filter(p -> p.getTitle().equals(id))
                 .findFirst();
-        return post;
+        if(post.isPresent()) {
+            return ResponseEntity.ok().body(post);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+
     }
 
     @GetMapping("/posts") // Список страниц
-    public List<Post> index(@RequestParam(defaultValue = "10") Integer limit) {
-        return posts.stream().limit(limit).toList();
+    public ResponseEntity<List<Post>> index(@RequestParam(defaultValue = "10") Integer limit) {
+        return ResponseEntity.ok().body(posts.stream().limit(limit).toList());
     }
 
     @PutMapping("/posts/{id}") // Обновление страницы
-    public Post update(@PathVariable String id, @RequestBody Post data) {
+    public ResponseEntity<Post> update(@PathVariable String id, @RequestBody Post data) {
         var maybePost = posts.stream()
                 .filter(p -> p.getTitle().equals(id))
                 .findFirst();
@@ -60,12 +71,13 @@ public class HomeController {
             page.setAuthor(data.getAuthor());
             page.setContent(data.getContent());
         }
-        return data;
+        return ResponseEntity.ok().body(data);
     }
 
     @DeleteMapping("/posts/{id}")
-    public void destroy(@PathVariable String id) {
+    public ResponseEntity<Void> destroy(@PathVariable String id) {
         posts.removeIf(p -> p.getTitle().equals(id));
+        return ResponseEntity.noContent().build();
     }
 
 }

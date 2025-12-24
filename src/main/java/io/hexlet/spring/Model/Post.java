@@ -15,27 +15,29 @@ public class Post {
         this.createdAt = createdAt;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getTitle() {
         return this.title;
     }
 
     public String getContent() {
-        return content;
+        return this.content;
+    }
+
+    public String getAuthor() {
+        return this.author;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return this.createdAt;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setContent(String content) {
         this.content = content;
     }
-
-
-    public String getAuthor() {
-        return author;
-    }
-
 
     public void setAuthor(String author) {
         this.author = author;
@@ -43,10 +45,6 @@ public class Post {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
     }
 
 

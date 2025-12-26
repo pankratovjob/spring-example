@@ -9,3 +9,10 @@ b
 2src/main/java/io/hexlet/spring/HomeController.java,b\e\beba6ac069f254fb5249737022497d8aff90ec34
 ^
 .src/main/java/io/hexlet/spring/Model/Post.java,7\d\7d1a5c8962b2df712f68c84edc258c365625de5a
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+^
+.src/main/java/io/hexlet/spring/Model/User.java,3\8\380a7e36feed82342050a9114810e51c56610936
+b
+2src/main/java/io/hexlet/spring/UserController.java,b\9\b9f68325dab09d71004862ac5654ce091d916c96

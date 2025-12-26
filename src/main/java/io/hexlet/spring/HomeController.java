@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @SpringBootApplication
 @RestController
+@RequestMapping("/api")
 public class HomeController {
     public static void main(String[] args) {
         SpringApplication.run(HomeController.class, args);

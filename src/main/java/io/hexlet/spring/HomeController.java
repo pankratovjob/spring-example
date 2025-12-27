@@ -21,6 +21,7 @@ public class HomeController {
 
     private List<Post> posts = new ArrayList<Post>();
 
+
     @GetMapping("/")
     public ResponseEntity<String> home() {
         var welcomeHxt = "!Добро пожаловать в Hexlet Spring Blog!";

@@ -22,3 +22,5 @@ e
 5src/main/java/io/hexlet/spring/ArticleController.java,c\1\c14cbd8af4e5e7aac044f0822a342b52b53b00cf
 G
 src/main/resources.java,0\b\0b1ba2c8df94da385b522d8eab06b2d41bc83216
+e
+5src/main/java/io/hexlet/spring/WelcomeController.java,e\9\e958fa1c0fbfd8b6ceb8e83cedac1ac412a20e80

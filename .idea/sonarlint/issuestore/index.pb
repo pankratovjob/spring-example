@@ -16,3 +16,9 @@ b
 .src/main/java/io/hexlet/spring/Model/User.java,3\8\380a7e36feed82342050a9114810e51c56610936
 b
 2src/main/java/io/hexlet/spring/UserController.java,b\9\b9f68325dab09d71004862ac5654ce091d916c96
+a
+1src/main/java/io/hexlet/spring/Model/Article.java,a\8\a8c6bd57419cd13d1fbe31aa591d2ab048e93b5b
+e
+5src/main/java/io/hexlet/spring/ArticleController.java,c\1\c14cbd8af4e5e7aac044f0822a342b52b53b00cf
+G
+src/main/resources.java,0\b\0b1ba2c8df94da385b522d8eab06b2d41bc83216

@@ -1,54 +1,27 @@
 package io.hexlet.spring.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@Entity
 public class Post {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
     private String title;
     private String content;
     private String author;
+    private boolean published;
     private LocalDateTime createdAt;
 
-    public Post(String title, String content, String author, LocalDateTime createdAt) {
-        this.title = title;
-        this.content = content;
-        this.author = author;
-        this.createdAt = createdAt;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public String getContent() {
-        return this.content;
-    }
-
-    public String getAuthor() {
-        return this.author;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return this.createdAt;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-
 }
-
-
 

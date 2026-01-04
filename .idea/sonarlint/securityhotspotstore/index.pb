@@ -20,7 +20,15 @@ a
 1src/main/java/io/hexlet/spring/Model/Article.java,a\8\a8c6bd57419cd13d1fbe31aa591d2ab048e93b5b
 e
 5src/main/java/io/hexlet/spring/ArticleController.java,c\1\c14cbd8af4e5e7aac044f0822a342b52b53b00cf
-G
-src/main/resources.java,0\b\0b1ba2c8df94da385b522d8eab06b2d41bc83216
 e
 5src/main/java/io/hexlet/spring/WelcomeController.java,e\9\e958fa1c0fbfd8b6ceb8e83cedac1ac412a20e80
+`
+0src/main/java/io/hexlet/spring/Model/Admins.java,e\6\e60aa508923e834c446fee873f255eea71f76cbb
+b
+2src/main/java/io/hexlet/spring/Model/UserBlog.java,f\b\fbbb75f3f5ce5c9543db458454a3bb0f1bbe12e8
+m
+=src/main/java/io/hexlet/spring/repository/UserRepository.java,6\9\69e35b56fd19b30ffc4344e7684ad5b5481a3d02
+m
+=src/main/java/io/hexlet/spring/repository/PostRepository.java,4\0\40e0266c32fbd021b98db550a00e39f7b1b062cf
+f
+6src/main/java/io/hexlet/spring/UserBlogController.java,2\2\22f372213cc3a017e736419faf2531c3886e3f39

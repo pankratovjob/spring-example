@@ -70,7 +70,6 @@ public class HomeController {
         if (maybePost.isPresent()) {
             var page = maybePost.get();
             page.setTitle(data.getTitle());
-            page.setAuthor(data.getAuthor());
             page.setContent(data.getContent());
         }
         return ResponseEntity.ok().body(data);

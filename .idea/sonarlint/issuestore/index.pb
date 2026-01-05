@@ -19,8 +19,6 @@ b
 a
 1src/main/java/io/hexlet/spring/Model/Article.java,a\8\a8c6bd57419cd13d1fbe31aa591d2ab048e93b5b
 e
-5src/main/java/io/hexlet/spring/ArticleController.java,c\1\c14cbd8af4e5e7aac044f0822a342b52b53b00cf
-e
 5src/main/java/io/hexlet/spring/WelcomeController.java,e\9\e958fa1c0fbfd8b6ceb8e83cedac1ac412a20e80
 `
 0src/main/java/io/hexlet/spring/Model/Admins.java,e\6\e60aa508923e834c446fee873f255eea71f76cbb
@@ -32,3 +30,5 @@ m
 =src/main/java/io/hexlet/spring/repository/PostRepository.java,4\0\40e0266c32fbd021b98db550a00e39f7b1b062cf
 f
 6src/main/java/io/hexlet/spring/UserBlogController.java,2\2\22f372213cc3a017e736419faf2531c3886e3f39
+b
+2src/main/java/io/hexlet/spring/PostController.java,a\d\ad2f65b3346d8451d3915e451ad21618c3d43221

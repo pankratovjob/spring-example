@@ -21,7 +21,5 @@ public class Post {
     private String content;
     private boolean published;
 
-
-
 }
 

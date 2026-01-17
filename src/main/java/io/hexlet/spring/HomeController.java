@@ -3,6 +3,7 @@ package io.hexlet.spring;
 import io.hexlet.spring.Model.Post;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.Optional;
 @SpringBootApplication
 @RestController
 @RequestMapping("/api")
+@EnableJpaAuditing
 public class HomeController {
     public static void main(String[] args) {
         SpringApplication.run(HomeController.class, args);

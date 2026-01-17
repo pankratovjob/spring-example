@@ -1,7 +1,7 @@
 package io.hexlet.spring.repository;
 
-import io.hexlet.spring.Model.UserBlog;
+import io.hexlet.spring.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<UserBlog, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 }
